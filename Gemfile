@@ -5,9 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Gem for generating fake data
+gem 'ffaker'
 # Gem for uploading Photo
 gem 'carrierwave'
-# Device Gem for user model and user generator
+# Device Gem for user model and authentication
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
