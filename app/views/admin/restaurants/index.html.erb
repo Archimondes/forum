@@ -1,5 +1,6 @@
 <h1>餐廳後台</h1>
 <ul>
+  <%= link_to 'New Restaurant', new_admin_restaurant_path %>
   <% @restaurants.each do |restaurant| %>
   <li>
     <%= restaurant.name %>
@@ -9,4 +10,4 @@
   </li>
   <% end %>
 </ul>
-<%= link_to 'New Restaurant', new_admin_restaurant_path %>
+<%= paginate @restaurants %>

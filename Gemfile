@@ -5,6 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Gem for making web page tabs
+gem 'kaminari'
 # Gem for generating fake data
 gem 'ffaker'
 # Gem for uploading Photo
